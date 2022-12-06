@@ -1,0 +1,285 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dqv:   <http://www.w3.org/ns/dqv#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/6abfa77a-81ab-4de9-aa17-cf5b17d3cebb>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "Unknown" ;
+        dct:description   "Organizational units of the University of Trento (at the date of modification of the dataset) with the necessary information to reconstruct the University organization chart. FIELDS: name: name of the unit || identifier: unique identifier of the unit in the University || unitType: type of unit (for instance INSTITUTIONAL BODY, ACADEMIC STRUCTURE, MANAGEMENT STRUCTURE) || subType: it further specifies the type of structure (for example, institutional bodies are distinguished into governing boards and supporting boards; academic structures are distinguished into departments and centers) || description: textual description of the unit || address: civic address of the unit || phone: phone number of the unit || email: email address of the unit || website: official website of the unit || unitPath: the list of identifiers of the units it depends hierarchically in the University organization chart." ;
+        dct:format        "JSON" ;
+        dct:identifier    "university" ;
+        dct:issued        "2020-02-20T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "english" ;
+        dct:license       "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"^^xsd:anyURI ;
+        dct:modified      "2020-07-04T00:00:00Z"^^xsd:dateTime ;
+        dct:title         "University of Trento" ;
+        dct:type          "None"^^xsd:anyURI ;
+        dcat:accessURL    "https://dati.unitn.it/du/Organization/en"^^xsd:anyURI ;
+        dcat:downloadURL  "https://dati.unitn.it/du/Organization/en"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/e90ba35b-1067-482b-9208-2d9897e039fe>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "email" ;
+        schema:email        "ateneo@pec.unitn.it" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/d51e5d01-4afd-4fc9-95f0-578dd5161535>
+        rdf:type          dct:PeriodOfTime ;
+        schema:endDate    "2022-07-04T17:22:57Z"^^xsd:dateTime ;
+        schema:startDate  "2020-02-20T17:22:57Z"^^xsd:dateTime .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/ccb88af4-6516-4c1c-8fa0-f57c08fab11e>
+        rdf:type         skos:Concept ;
+        skos:definition  "Building" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/5cf4eec8-e2d8-4d9a-a365-dd26a740d20a>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "Unknown" ;
+        dct:description  "Data containing information about a library. FIELDS: id: unique identifier of the library in the data || address: address of the library || name: name of the library || website: website of the library || alt_name: alternative name of the library || short_name: short name of the library || opening_hours: time of the day when the library operates and is open to the public || phone: phone number of the library || wheelchair: whether the library is accessible with a wheelchair" ;
+        dct:format       "JSON" ;
+        dct:identifier   "student_residencies" ;
+        dct:type         "None"^^xsd:anyURI ;
+        dcat:accessURL   "https://www.openstreetmap.org/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/0c8ed597-9248-4a8f-befd-f5f707a98829>
+        rdf:type           schema:Organization ;
+        schema:identifier  "ea57d101-4aaf-4b6b-af48-fb1b21d60528" ;
+        schema:legalName   "OpenStreetMap" ;
+        schema:leiCode     "ea57d101-4aaf-4b6b-af48-fb1b21d60528" ;
+        schema:url         "https://www.openstreetmap.org/"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/c8a2c897-83f5-4325-8440-c920f7ce3925>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "Unknown" ;
+        dct:description  "Online platform for University students and teachers." ;
+        dct:format       "HTML" ;
+        dct:identifier   "esse3" ;
+        dct:language     "italian" , "english" ;
+        dct:type         "None"^^xsd:anyURI ;
+        dcat:accessURL   "https://www.esse3.unitn.it/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/16da88ca-1671-41ec-9c97-5d5aa9519098>
+        rdf:type           dcat:Dataset ;
+        dct:description    "In-depth information about the courses taught at UniTN." ;
+        dct:identifier     "88d5d848-d125-424a-b29f-2cbca7a02a74" ;
+        dct:language       "english" , "italian" ;
+        dct:modified       "2022-07-04T18:47:30Z"^^xsd:dateTime ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/fd15c5e3-58d1-4c52-8546-30a349a1af16> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/ad2c7621-8842-4fd2-894d-ee08011bd922> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/d51e5d01-4afd-4fc9-95f0-578dd5161535> ;
+        dct:title          "Esse3 information on courses of the University of Trento" ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/e90ba35b-1067-482b-9208-2d9897e039fe> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/c8a2c897-83f5-4325-8440-c920f7ce3925> ;
+        dcat:keyword       "courses" , "university" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/b09cb3f3-a2d0-4fc0-b31a-60c732763b14> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/fb5d8044-dabc-4255-9efa-7a7dccdf3b53>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "Unknown" ;
+        dct:description   "Organizational units of the University of Trento (at the date of modification of the dataset) with the necessary information to reconstruct the University organization chart. FIELDS: name: name of the unit || identifier: unique identifier of the unit in the University || unitType: type of unit (for instance INSTITUTIONAL BODY, ACADEMIC STRUCTURE, MANAGEMENT STRUCTURE) || subType: it further specifies the type of structure (for example, institutional bodies are distinguished into governing boards and supporting boards; academic structures are distinguished into departments and centers) || description: textual description of the unit || address: civic address of the unit || phone: phone number of the unit || email: email address of the unit || website: official website of the unit || unitPath: the list of identifiers of the units it depends hierarchically in the University organization chart." ;
+        dct:format        "JSON" ;
+        dct:identifier    "phd_programs" ;
+        dct:issued        "2020-02-20T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "english" ;
+        dct:license       "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"^^xsd:anyURI ;
+        dct:modified      "2020-07-04T00:00:00Z"^^xsd:dateTime ;
+        dct:title         "PhD programs of the University of Trento" ;
+        dct:type          "None"^^xsd:anyURI ;
+        dcat:accessURL    "https://dati.unitn.it/du/Organization/en"^^xsd:anyURI ;
+        dcat:downloadURL  "https://dati.unitn.it/du/Organization/en"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/fd15c5e3-58d1-4c52-8546-30a349a1af16>
+        rdf:type           schema:Organization ;
+        schema:identifier  "UNSTTREN" ;
+        schema:legalName   "UniversitÃ  di Trento" ;
+        schema:leiCode     "UNSTTREN" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/e5f67ef6-cd1c-4a68-afb6-296bbf4626f8>
+        rdf:type           dcat:Dataset ;
+        dct:created        "2020-02-20T00:00:00Z"^^xsd:dateTime ;
+        dct:description    "Courses offered by the University of Trento. The dataset is updated annually, providing the complete list of courses for each academic year (at the date of modification of the dataset)." ;
+        dct:identifier     "UNSTTREN:f2b30f8d-5d87-47a9-b3e9-60e412928518" ;
+        dct:issued         "2020-02-20T00:00:00Z"^^xsd:dateTime ;
+        dct:language       "english" ;
+        dct:modified       "2022-07-04T00:00:00Z"^^xsd:dateTime ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/fd15c5e3-58d1-4c52-8546-30a349a1af16> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/ad2c7621-8842-4fd2-894d-ee08011bd922> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/d51e5d01-4afd-4fc9-95f0-578dd5161535> ;
+        dct:title          "Courses and degree programs offered by the University of Trento " ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/e867c120-ee2a-4c2d-a550-91ed2a2bad55> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/6f3f13e7-bf63-4f18-94b2-e7045b234950> ;
+        dcat:keyword       "courses" , "university" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/b09cb3f3-a2d0-4fc0-b31a-60c732763b14> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/f4909fdd-76b1-41c8-8620-a729280690ff>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "Unknown" ;
+        dct:description   "Staff of the University of Trento (at the date of modification of the dataset). We also include guests and temporary staff. For each person, positions held in each unit and contact information are indicated. ATTRIBUTES: name: name of the person || surname: surname of the person || identifier: unique identifier of the person in the University || phone: phone number || positions: for each position held in the University, the textual description of the position is provided (\\role\\), the name of the unit in which it occupies the position (\\unitName\\), and the unique identifier of the unit in the University (\\unitId\\)." ;
+        dct:format        "JSON" ;
+        dct:identifier    "57720d62-a7d1-47a4-b6d6-afb76fd27e88" ;
+        dct:issued        "2020-02-20T15:21:29Z"^^xsd:dateTime ;
+        dct:language      "english" ;
+        dct:license       "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"^^xsd:anyURI ;
+        dct:modified      "2022-07-04T18:09:22Z"^^xsd:dateTime ;
+        dct:title         "Professors of the University of Trento" ;
+        dct:type          "None"^^xsd:anyURI ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/staff-of-the-university-of-trento/resource/57720d62-a7d1-47a4-b6d6-afb76fd27e88"^^xsd:anyURI ;
+        dcat:downloadURL  "https://dati.unitn.it/du/Person/en"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/70931ec4-1ebe-41e0-95a5-3d3b0aa8637b>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "Unknown" ;
+        dct:description   "Staff of the University of Trento (at the date of modification of the dataset). We also include guests and temporary staff. For each person, positions held in each unit and contact information are indicated. ATTRIBUTES: name: name of the person || surname: surname of the person || identifier: unique identifier of the person in the University || phone: phone number || positions: for each position held in the University, the textual description of the position is provided (\\role\\), the name of the unit in which it occupies the position (\\unitName\\), and the unique identifier of the unit in the University (\\unitId\\)." ;
+        dct:format        "JSON" ;
+        dct:identifier    "8e1178ab-12f9-483c-b39e-bdb460d1aa48" ;
+        dct:issued        "2020-02-20T15:21:29Z"^^xsd:dateTime ;
+        dct:language      "english" ;
+        dct:license       "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"^^xsd:anyURI ;
+        dct:modified      "2022-07-04T18:09:22Z"^^xsd:dateTime ;
+        dct:title         "PhD students of the University of Trento" ;
+        dct:type          "None"^^xsd:anyURI ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/staff-of-the-university-of-trento/resource/57720d62-a7d1-47a4-b6d6-afb76fd27e88"^^xsd:anyURI ;
+        dcat:downloadURL  "https://dati.unitn.it/du/Person/en"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7c41e43f-506d-4f98-96a9-60d91542dfcf>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "email" ;
+        schema:email        "talk-it-trentino@openstreetmap.org" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/2db6ef7c-7f9e-4dc3-af20-9d9bc083510a>
+        rdf:type           dcat:Dataset ;
+        dct:created        "2020-02-20T00:00:00Z"^^xsd:dateTime ;
+        dct:description    "Organizational units of the University of Trento (at the date of modification of the dataset) with the necessary information to reconstruct the University organization chart." ;
+        dct:identifier     "UNSTTREN:b1f12d96-f35c-437a-9288-c35995922efe" ;
+        dct:issued         "2020-02-20T00:00:00Z"^^xsd:dateTime ;
+        dct:language       "english" ;
+        dct:modified       "2022-07-04T00:00:00Z"^^xsd:dateTime ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/fd15c5e3-58d1-4c52-8546-30a349a1af16> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/ad2c7621-8842-4fd2-894d-ee08011bd922> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/d51e5d01-4afd-4fc9-95f0-578dd5161535> ;
+        dct:title          "Organizational units of the University of Trento" ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/e867c120-ee2a-4c2d-a550-91ed2a2bad55> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/6abfa77a-81ab-4de9-aa17-cf5b17d3cebb> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/8406d6c7-3ddb-4e5b-8982-44275d38fcde> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/fb5d8044-dabc-4255-9efa-7a7dccdf3b53> ;
+        dcat:keyword       "contact" , "organizational unit" , "university" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/b09cb3f3-a2d0-4fc0-b31a-60c732763b14> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/ad2c7621-8842-4fd2-894d-ee08011bd922>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.0853364 46.0805156)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/d2c25d73-9e05-461c-99be-0ee7a6afec06>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "Unknown" ;
+        dct:description  "Data containing information about a library. FIELDS: id: unique identifier of the library in the data || address: address of the library || name: name of the library || website: website of the library || alt_name: alternative name of the library || short_name: short name of the library || opening_hours: time of the day when the library operates and is open to the public || phone: phone number of the library || wheelchair: whether the library is accessible with a wheelchair" ;
+        dct:format       "JSON" ;
+        dct:identifier   "libraries" ;
+        dct:type         "None"^^xsd:anyURI ;
+        dcat:accessURL   "https://www.openstreetmap.org/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/e22cdea6-65d2-49cc-8d02-e07b3e26963b>
+        rdf:type           dcat:Dataset ;
+        dct:created        "2020-02-20T00:00:00Z"^^xsd:dateTime ;
+        dct:description    "Staff of the University of Trento (at the date of modification of the dataset). We also include guests and temporary staff. For each person, positions held in each unit and contact information are indicated." ;
+        dct:identifier     "UNSTTREN:1a9b06d9-b56c-499a-be5b-f22fa9bcceaf" ;
+        dct:issued         "2020-02-20T00:00:00Z"^^xsd:dateTime ;
+        dct:language       "english" ;
+        dct:modified       "2022-07-04T00:00:00Z"^^xsd:dateTime ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/fd15c5e3-58d1-4c52-8546-30a349a1af16> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/ad2c7621-8842-4fd2-894d-ee08011bd922> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/d51e5d01-4afd-4fc9-95f0-578dd5161535> ;
+        dct:title          "Staff of the University of Trento" ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/e867c120-ee2a-4c2d-a550-91ed2a2bad55> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/70931ec4-1ebe-41e0-95a5-3d3b0aa8637b> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/f4909fdd-76b1-41c8-8620-a729280690ff> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/8802ca7a-1a52-4bf0-aa40-ccc3cedc8b05> ;
+        dcat:keyword       "contact" , "university" , "staff" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/b09cb3f3-a2d0-4fc0-b31a-60c732763b14> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/8406d6c7-3ddb-4e5b-8982-44275d38fcde>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "Unknown" ;
+        dct:description   "Organizational units of the University of Trento (at the date of modification of the dataset) with the necessary information to reconstruct the University organization chart. FIELDS: name: name of the unit || identifier: unique identifier of the unit in the University || unitType: type of unit (for instance INSTITUTIONAL BODY, ACADEMIC STRUCTURE, MANAGEMENT STRUCTURE) || subType: it further specifies the type of structure (for example, institutional bodies are distinguished into governing boards and supporting boards; academic structures are distinguished into departments and centers) || description: textual description of the unit || address: civic address of the unit || phone: phone number of the unit || email: email address of the unit || website: official website of the unit || unitPath: the list of identifiers of the units it depends hierarchically in the University organization chart." ;
+        dct:format        "JSON" ;
+        dct:identifier    "departments" ;
+        dct:issued        "2020-02-20T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "english" ;
+        dct:license       "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"^^xsd:anyURI ;
+        dct:modified      "2020-07-04T00:00:00Z"^^xsd:dateTime ;
+        dct:title         "Departments of the University of Trento" ;
+        dct:type          "None"^^xsd:anyURI ;
+        dcat:accessURL    "https://dati.unitn.it/du/Organization/en"^^xsd:anyURI ;
+        dcat:downloadURL  "https://dati.unitn.it/du/Organization/en"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/e867c120-ee2a-4c2d-a550-91ed2a2bad55>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "email" ;
+        schema:email        "opendata@unitn.it" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/6f3f13e7-bf63-4f18-94b2-e7045b234950>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "Unknown" ;
+        dct:description   "Courses offered by the University of Trento. The dataset is updated annually, providing the complete list of courses for each academic year (at the date of modification of the dataset). FIELDS: name: name of the course || description: textual description of the course || degreeProgram: degree program of the course || department: the academic structure that offers course; both the name (\\name\\) and the identifier of the structure (\\identifier\\) are provided || website: official website of the course || professor: the list of professors who teach the course; the name (\\givenName\\), the surname (\\familyName\\) and the identifier of the person (\\identifier\\) are provided || assistant: the list of teaching assistants of the course; the name (\\givenName\\), the surname (\\familyName\\) and the identifier of the person (\\identifier\\) are provided." ;
+        dct:format        "JSON" ;
+        dct:identifier    "courses_eng" ;
+        dct:issued        "2020-02-20T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "english" ;
+        dct:license       "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"^^xsd:anyURI ;
+        dct:modified      "2022-07-04T00:00:00Z"^^xsd:dateTime ;
+        dct:title         "Courses and degree programs offered by the University of Trento" ;
+        dct:type          "None"^^xsd:anyURI ;
+        dcat:accessURL    "https://dati.unitn.it/du/Course/en"^^xsd:anyURI ;
+        dcat:downloadURL  "https://dati.unitn.it/du/Course/en"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/f0fd883e-ecd4-40e5-8e81-e36e3641defc>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   " Open Data Commons Open Database License" ;
+        dct:description    "Reverse geocoding data on the main buildings of the University of Trento. Includes departments, student recidences, libraries, etc." ;
+        dct:identifier     "2e1f979b-98af-4197-b442-e2f8ae3c01eb" ;
+        dct:language       "english" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/0c8ed597-9248-4a8f-befd-f5f707a98829> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/ad2c7621-8842-4fd2-894d-ee08011bd922> ;
+        dct:title          "OpenStreetMap UniTN buildings data" ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7c41e43f-506d-4f98-96a9-60d91542dfcf> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/d2c25d73-9e05-461c-99be-0ee7a6afec06> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/5cf4eec8-e2d8-4d9a-a365-dd26a740d20a> ;
+        dcat:keyword       "buildings" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/ccb88af4-6516-4c1c-8fa0-f57c08fab11e> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/8802ca7a-1a52-4bf0-aa40-ccc3cedc8b05>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "Unknown" ;
+        dct:description   "Staff of the University of Trento (at the date of modification of the dataset). We also include guests and temporary staff. For each person, positions held in each unit and contact information are indicated. ATTRIBUTES: name: name of the person || surname: surname of the person || identifier: unique identifier of the person in the University || phone: phone number || positions: for each position held in the University, the textual description of the position is provided (\\role\\), the name of the unit in which it occupies the position (\\unitName\\), and the unique identifier of the unit in the University (\\unitId\\)." ;
+        dct:format        "JSON" ;
+        dct:identifier    "f688accd-0745-46fc-bc20-735812dc453e" ;
+        dct:issued        "2020-02-20T15:21:29Z"^^xsd:dateTime ;
+        dct:language      "english" ;
+        dct:license       "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"^^xsd:anyURI ;
+        dct:modified      "2022-07-04T18:09:22Z"^^xsd:dateTime ;
+        dct:title         "General staff members of the University of Trento" ;
+        dct:type          "None"^^xsd:anyURI ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/staff-of-the-university-of-trento/resource/57720d62-a7d1-47a4-b6d6-afb76fd27e88"^^xsd:anyURI ;
+        dcat:downloadURL  "https://dati.unitn.it/du/Person/en"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/b09cb3f3-a2d0-4fc0-b31a-60c732763b14>
+        rdf:type         skos:Concept ;
+        skos:definition  "Istruzione, cultura e sport " ;
+        skos:prefLabel   "3206" .
