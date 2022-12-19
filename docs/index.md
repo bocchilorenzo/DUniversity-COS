@@ -1,6 +1,9 @@
-# DUniversity C+O+S
-
-Official website for the Knowledge Graph Engineering course at the University of Trento for the academic year 2022/2023.
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+      <h1>DUniversity C+O+S</h1>
+      <p>Official website for the Knowledge Graph Engineering course at the University of Trento for the academic year 2022/2023.</p>
+  </div>
+</div>
 
 ## Introduction
 
