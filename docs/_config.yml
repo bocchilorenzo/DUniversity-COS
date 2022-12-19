@@ -1,4 +1,4 @@
 title: DUniversity C+O+S
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3
 plugins:
 - jekyll-remote-theme
